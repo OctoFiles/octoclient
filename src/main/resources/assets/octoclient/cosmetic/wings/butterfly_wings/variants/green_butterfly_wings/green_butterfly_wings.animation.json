@@ -1,0 +1,22 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"nrc.idle": {
+			"loop": true,
+			"bones": {
+				"br": {
+					"rotation": [0, "17.5+math.cos(query.anim_time * 250) * -17.5", 0]
+				},
+				"tl": {
+					"rotation": [0, "-6+math.cos(query.anim_time * 250) * 10", 0]
+				},
+				"tr": {
+					"rotation": [0, "6+math.cos(query.anim_time * 250) * -10", 0]
+				},
+				"bl": {
+					"rotation": [0, "-17.5+math.cos(query.anim_time * 250) * 17.5", 0]
+				}
+			}
+		}
+	}
+}

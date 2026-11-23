@@ -1,0 +1,45 @@
+{
+    "id": "0577eaa9-2916-4598-a6e4-2e9aaaa8bd15",
+    "dateAdded": "2025-07-21",
+    "name": "Snow Aura",
+    "creator": "Tinus",
+    "designerIds": ["d5059cf9-0020-4b54-82b5-00c8f06de903"],
+    "price": 1200,
+    "type": "AURA",
+    "path": "snow_aura",
+    "defaultSettings": {
+        "frames": 3,
+        "frameDelay": 70,
+        "color": null,
+        "scale": 1.0,
+        "previewScale": 1.58,
+        "offset": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+        },
+        "previewOffset": {
+            "x": -0.01,
+            "y": -0.4,
+            "z": 0.0
+        },
+        "adjustRotationWhenSwimmingOrFlying": false,
+        "adjustPositionWhenSkeaking": true,
+        "sneakingPositionOffset": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+        },
+        "renderMode": null,
+        "hash": null
+    },
+    "layers": [],
+    "features": [],
+    "compatibleCosmetics": [],
+    "rarity": "EPIC",
+    "overflow": {
+    "overflowInShop": true
+     },
+    "isExclusive": false, 
+    "supportedBones": ["armorHead", "armorBody", "armorRightArm", "armorRightLeg", "armorRightBoot", "armorLeftArm", "armorLeftLeg", "armorLeftBoot"]
+}

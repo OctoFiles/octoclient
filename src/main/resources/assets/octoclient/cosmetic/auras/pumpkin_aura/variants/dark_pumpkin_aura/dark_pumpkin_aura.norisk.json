@@ -1,0 +1,48 @@
+{
+    "id": "5b9e383f-c55f-4a40-86a4-f1b6bc25b5f0",
+    "dateAdded": "2025-07-21",
+    "name": "Dark Pumpkin Aura",
+    "creator": "Bryan&Dönermann",
+    "designerIds": ["ae126ab8-489a-4adc-b51c-95737eafb575", "0565369c-ec68-4e7e-a90f-3492eb7002d8"],
+    "price": 0,
+    "variant": {
+    "parentId": "0877dd1e-f36f-4094-a3c2-e3931727e4ef"
+  },
+    "type": "AURA",
+    "path": "dark_pumpkin_aura",
+    "defaultSettings": {
+        "frames": 3,
+        "frameDelay": 70,
+        "color": null,
+        "scale": 1.0,
+        "previewScale": 1.58,
+        "offset": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+        },
+        "previewOffset": {
+            "x": -0.01,
+            "y": -0.4,
+            "z": 0.0
+        },
+        "adjustRotationWhenSwimmingOrFlying": false,
+        "adjustPositionWhenSkeaking": true,
+        "sneakingPositionOffset": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+        },
+        "renderMode": null,
+        "hash": null
+    },
+    "layers": [],
+    "features": [],
+    "compatibleCosmetics": [],
+    "rarity": "EPIC",
+    "overflow": {
+    "overflowInShop": true
+     },
+    "isExclusive": false, 
+    "supportedBones": ["armorHead", "armorBody", "armorRightArm", "armorRightLeg", "armorRightBoot", "armorLeftArm", "armorLeftLeg", "armorLeftBoot"]
+}

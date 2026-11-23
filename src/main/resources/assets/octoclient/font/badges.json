@@ -1,0 +1,35 @@
+{
+  "providers": [
+    {
+      "type": "bitmap",
+      "file": "octoclient:font/badges.png",
+      "ascent": 8,
+      "height": 10,
+      "chars": [
+        "\ue020"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "octoclient:font/badges_orange.png",
+      "ascent": 8,
+      "height": 10,
+      "chars": [
+        "\ue021"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "octoclient:font/badges_green.png",
+      "ascent": 8,
+      "height": 10,
+      "chars": [
+        "\ue022"
+      ]
+    },
+    {
+      "type": "reference",
+      "id": "minecraft:default"
+    }
+  ]
+}

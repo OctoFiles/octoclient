@@ -1,0 +1,14 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"nrc.idle": {
+			"loop": true,
+			"bones": {
+				"sombrero": {
+					"scale": 1.5
+				}
+			}
+		}
+	},
+	"geckolib_format_version": 2
+}

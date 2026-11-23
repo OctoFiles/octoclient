@@ -1,0 +1,33 @@
+@font-face { font-family: Icons; src: url(fonts/fa-solid.ttf); }
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  background: #06070a;
+}
+
+canvas {
+  position: fixed;
+  display: block;
+}
+
+#glass {
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+/* The UI pass renders at the 996x560 design resolution and is upscaled by the
+ * browser without smoothing, so the preview sits on the same pixel grid as
+ * Minecraft's GUI: text glyphs are whole pixels, like in game. */
+#ui {
+  left: 0;
+  top: 0;
+  z-index: 2;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}

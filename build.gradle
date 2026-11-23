@@ -1,0 +1,240 @@
+plugins {
+	id 'net.fabricmc.fabric-loom' version "${loom_version}"
+	id 'maven-publish'
+}
+
+version = project.mod_version
+group = project.maven_group
+
+base {
+	archivesName = project.archives_base_name
+}
+
+repositories {
+	// Add repositories to retrieve artifacts from in here.
+	// You should only use this when depending on other mods because
+	// Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
+	// See https://docs.gradle.org/current/userguide/declaring_repositories.html
+	// for more information about repositories.
+	maven {
+		url = "https://api.modrinth.com/maven"
+	}
+	flatDir {
+		dirs "libs"
+	}
+}
+
+dependencies {
+	// To change the versions see the gradle.properties file
+	minecraft "com.mojang:minecraft:${project.minecraft_version}"
+	implementation "net.fabricmc:fabric-loader:${project.loader_version}"
+
+	// Fabric API. This is technically optional, but you probably want it anyway.
+	implementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
+
+	// Bundle these client-side dependencies so the features work from one jar.
+	implementation "natural-motionblur:natural-motionblur:1.4.5+mc26.2"
+	include "natural-motionblur:natural-motionblur:1.4.5+mc26.2"
+	implementation "maven.modrinth:yacl:3.9.7+26.2-fabric"
+	include "maven.modrinth:yacl:3.9.7+26.2-fabric"
+	implementation "maven.modrinth:notexturerotations:1.0.5+26.x"
+	include "maven.modrinth:notexturerotations:1.0.5+26.x"
+	implementation "maven.modrinth:sodium:mc26.2-0.9.2-fabric"
+	include "maven.modrinth:sodium:mc26.2-0.9.2-fabric"
+	implementation "maven.modrinth:sodium-extra:mc26.2-0.9.5+fabric"
+	include "maven.modrinth:sodium-extra:mc26.2-0.9.5+fabric"
+	implementation "maven.modrinth:lithium:mc26.2-0.25.3-fabric"
+	include "maven.modrinth:lithium:mc26.2-0.25.3-fabric"
+	implementation "maven.modrinth:ferrite-core:9.0.0-fabric"
+	include "maven.modrinth:ferrite-core:9.0.0-fabric"
+	implementation "maven.modrinth:krypton:0.3.1"
+	include "maven.modrinth:krypton:0.3.1"
+	implementation "maven.modrinth:immediatelyfast:1.16.5+26.2-fabric"
+	include "maven.modrinth:immediatelyfast:1.16.5+26.2-fabric"
+	implementation "maven.modrinth:dynamic-fps:3.11.9"
+	include "maven.modrinth:dynamic-fps:3.11.9"
+}
+
+sourceSets {
+	main {
+		java.srcDir "third_party/sky-lyrics/src/main/java"
+	}
+}
+
+processResources {
+	def version = project.version
+	inputs.property "version", version
+	// Keep the source-client model transforms with the bundled catalog.  Those
+	// transforms are data, not Fabric API, and prevent differently-authored OBJ
+	// cosmetics (notably backpacks, tails, and wings) from sharing one bad pivot.
+	from("cosmetics/_Katalog") {
+		include "models.json"
+		into "assets/octoclient/cosmetics/reference"
+	}
+	from("third_party/sky-lyrics/src/main/resources") {
+		exclude "fabric.mod.json"
+	}
+
+	filesMatching("fabric.mod.json") {
+		expand "version": version
+	}
+}
+
+loom {
+	runs {
+		client {
+			// Test clients always open on the second monitor. Use -Pmonitor=0 to
+			// leave placement to the window manager.
+			property "octoclient.monitor", project.findProperty("monitor")?.toString() ?: "2"
+			// Opt-in dev shortcut: .\gradlew.bat runClient -PquickWorld="New World"
+			// joins an existing save straight away instead of the title screen.
+			if (project.hasProperty("quickWorld")) {
+				programArgs "--quickPlaySingleplayer", project.property("quickWorld")
+			}
+			// Opt-in dev shortcut: opens the dashboard once a world is loaded, so
+			// the glass pipeline can be exercised without pressing RSHIFT.
+			if (project.hasProperty("autoDashboard")) {
+				property "octoclient.autoDashboard", "true"
+			}
+			// Opt-in dev shortcut: opens the dashboard on the title screen, so it
+			// can be captured without loading a world.
+			if (project.hasProperty("dashboardAtTitle")) {
+				property "octoclient.dashboardAtTitle", "true"
+			}
+			// Same, for the cosmetics studio (shared dashboard shell).
+			if (project.hasProperty("cosmeticsAtTitle")) {
+				property "octoclient.cosmeticsAtTitle", "true"
+			}
+			if (project.hasProperty("screenshot")) {
+				property "octoclient.screenshot", project.property("screenshot")
+			}
+			// Opt-in dev shortcut: opens a module's settings accordion before the
+			// capture so the accordion rows can be verified without input.
+			if (project.hasProperty("demoOpen")) {
+				property "octoclient.demoOpen", project.property("demoOpen")
+			}
+			// Dev-only: -PdemoMode opens the first mode setting's option list, so the
+			// dropdown can be captured without synthetic mouse input.
+			if (project.hasProperty("demoMode")) {
+				property "octoclient.demoMode", "true"
+			}
+			// Dev-only: -PdemoExpand opens every settings group of the shown module,
+			// so the expanded inspector cards can be captured.
+			if (project.hasProperty("demoExpand")) {
+				property "octoclient.demoExpand", "true"
+			}
+			// Dev-only: -PdemoScroll=<px> prescrolls an opened inspector for captures.
+			if (project.hasProperty("demoScroll")) {
+				property "octoclient.demoScroll", project.property("demoScroll").toString()
+			}
+			// Opt-in dev shortcut: same switch, but the value may also be a
+			// category id/title ("secret") to capture that tab's card grid.
+			if (project.hasProperty("demoCategory")) {
+				property "octoclient.demoOpen", project.property("demoCategory")
+			}
+			// Dev-only: preselect a cosmetics sub-tab (e.g. SHIELD) for captures.
+			if (project.hasProperty("demoCosmeticKind")) {
+				property "octoclient.demoCosmeticKind", project.property("demoCosmeticKind")
+			}
+			// Opt-in: hide the catalog shield on every other series shot so the
+			// first-person silhouette can be isolated by differencing adjacent shots.
+			if (project.hasProperty("shieldToggle")) {
+				property "octoclient.shieldToggle", "true"
+			}
+			// Dev-only: log whether the cosmetics sub-tab row overflows its panel.
+			if (project.hasProperty("debugTabs")) {
+				property "octoclient.debugTabs", "true"
+			}
+			// Opt-in dev shortcut: shows the hidden ??? tab without typing the
+			// arrow sequence, so its cards can be captured.
+			if (project.hasProperty("secretTab")) {
+				property "octoclient.secretTab", "true"
+			}
+			// Opt-in dev shortcut: force third person before a capture so
+			// player cosmetics (cape/hat) are actually on screen.
+			if (project.hasProperty("thirdPerson")) {
+				property "octoclient.thirdPerson", "true"
+			}
+			// Same, but also pins the player's facing so the capture is repeatable.
+			if (project.hasProperty("faceForward")) {
+				property "octoclient.faceForward", "true"
+			}
+			// Opt-in: look at the player's front instead of the back.
+			if (project.hasProperty("frontView")) {
+				property "octoclient.frontView", "true"
+			}
+			// Opt-in: grab the back view and then the front view in one run.
+			if (project.hasProperty("pairShots")) {
+				property "octoclient.pairShots", "true"
+			}
+			// Opt-in: -Pseries=8 grabs eight frames a few ticks apart.
+			if (project.hasProperty("series")) {
+				property "octoclient.series", project.property("series").toString()
+			}
+			// Dev-only: log each GIF cape frame advance during a smoke test.
+			if (project.hasProperty("debugCapeAnim")) {
+				property "octoclient.debugCapeAnim", "true"
+			}
+			// Opt-in: hide the catalog wings on every other series shot so the
+			// wing silhouette can be isolated by differencing adjacent shots.
+			if (project.hasProperty("wingToggle")) {
+				property "octoclient.wingToggle", "true"
+			}
+			// Opt-in: teleport to a fixed spot before the capture.
+			if (project.hasProperty("capturePos")) {
+				property "octoclient.capturePos", project.property("capturePos").toString()
+			}
+			// Opt-in: extra commands before the capture, separated by ';'
+			// (e.g. -PcaptureCommand="item replace entity @s armor.head ...").
+			if (project.hasProperty("captureCommand")) {
+				property "octoclient.captureCommand", project.property("captureCommand").toString()
+			}
+			// Dev-only: trace first-person catalog shield submission.
+			if (project.hasProperty("debugShields")) {
+				property "octoclient.debugShields", "true"
+			}
+			// Opt-in window size, e.g. -Pwin=1600x900, for captures at a known
+			// GUI resolution (pair with guiScale in run/options.txt).
+			if (project.hasProperty("win")) {
+				def wh = project.property("win").toString().toLowerCase().split("x")
+				programArgs "--width", wh[0], "--height", wh[1]
+			}
+			// Same, but grabs the frame without needing the dashboard open —
+			// used to capture a clean world backdrop for the web preview.
+			if (project.hasProperty("worldShot")) {
+				property "octoclient.screenshot", project.property("worldShot")
+				property "octoclient.screenshotAnyScreen", "true"
+			}
+		}
+	}
+}
+
+tasks.withType(JavaCompile).configureEach {
+	it.options.release = 25
+	it.options.encoding = 'UTF-8'
+}
+
+java {
+	// Loom will automatically attach sourcesJar to a RemapSourcesJar task and to the "build" task
+	// if it is present.
+	// If you remove this line, sources will not be generated.
+	withSourcesJar()
+
+	sourceCompatibility = JavaVersion.VERSION_25
+	targetCompatibility = JavaVersion.VERSION_25
+}
+
+jar {
+	def projectName = project.name
+	inputs.property "projectName", projectName
+
+	from("LICENSE") {
+		rename { "${it}_$projectName"}
+	}
+	from("third_party/sky-lyrics/LICENSE") {
+		rename { "${it}_SkyLyrics"}
+	}
+	from("third_party/sky-lyrics/licenses") {
+		into "licenses/sky-lyrics"
+	}
+}

@@ -1,0 +1,44 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"nrc.idle": {
+			"loop": true,
+			"bones": {
+				"tl": {
+					"rotation": [25.4876, "-51.1698+math.sin(query.anim_time*100-50)*10-0.15*math.sin(query.anim_time*100-50)*10", -12.93082],
+					"position": [-2, 5, 1]
+				},
+				"tll": {
+					"rotation": [0, "15+math.sin(query.anim_time*100-100)*40-0.15*math.sin(query.anim_time*100-100)*40", 0]
+				},
+				"tr": {
+					"rotation": [-25.4876, "51.1698-math.sin(query.anim_time*100-50)*10+0.15*math.sin(query.anim_time*100-50)*10", -12.93082],
+					"position": [-2, 5, -1]
+				},
+				"trr": {
+					"rotation": [0, "-15-math.sin(query.anim_time*100-100)*40+0.15*math.sin(query.anim_time*100-100)*40", 0]
+				}
+			}
+		},
+		"nrc.shop": {
+			"loop": true,
+			"bones": {
+				"tl": {
+					"rotation": [15, "-20+math.sin(query.anim_time*250)*10", 0],
+					"position": [-2, 5, 1]
+				},
+				"tr": {
+					"rotation": [-15, "20-math.sin(query.anim_time*250)*10", 0],
+					"position": [-2, 5, -1]
+				},
+				"armorBody": {
+					"position": [0, 0, 0]
+				},
+				"plate": {
+					"position": [0, 0, -1]
+				}
+			}
+		}
+	},
+	"geckolib_format_version": 2
+}

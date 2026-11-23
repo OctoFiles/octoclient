@@ -1,0 +1,30 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"nrc.idle": {
+			"loop": true,
+			"bones": {
+				"br": {
+					"rotation": {
+						"vector": [0, "17.5+math.cos(query.anim_time * 250) * -17.5", 0]
+					}
+				},
+				"tl": {
+					"rotation": {
+						"vector": [0, "-2.5+math.cos(query.anim_time * 250) * 10", 0]
+					}
+				},
+				"tr": {
+					"rotation": {
+						"vector": [0, "2.5+math.cos(query.anim_time * 250) * -10", 0]
+					}
+				},
+				"bl": {
+					"rotation": {
+						"vector": [0, "-17.5+math.cos(query.anim_time * 250) * 17.5", 0]
+					}
+				}
+			}
+		}
+	}
+}

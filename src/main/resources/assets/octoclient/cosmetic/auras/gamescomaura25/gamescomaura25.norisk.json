@@ -1,0 +1,43 @@
+{
+    "id": "3864589b-f44f-4d9b-b4e9-373dafb34bfa",
+    "name": "Gamescom '25 Aura",
+    "creator": "Tinus",
+    "designerIds": ["d5059cf9-0020-4b54-82b5-00c8f06de903"],
+    "price": -1,
+    "type": "AURA",
+    "path": "gamescomaura25",
+    "dateAdded": "2025-08-19",
+    "defaultSettings": {
+        "color": null,
+        "scale": 1.0,
+        "previewScale": 2.0,
+        "offset": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+        },
+        "previewOffset": {
+            "x": -0.01,
+            "y": -0.4,
+            "z": 0.0
+        },
+        "adjustRotationWhenSwimmingOrFlying": false,
+        "adjustPositionWhenSkeaking": true,
+        "sneakingPositionOffset": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+        },
+        "renderMode": null,
+        "hash": null
+    },
+    "layers": [],
+    "features": [],
+    "compatibleCosmetics": [],
+    "rarity": "LEGENDARY",
+    "overflow": {
+        "overflowInShop": true
+    },
+    "isExclusive": true, 
+    "supportedBones": ["armorHead", "armorBody", "armorRightArm", "armorRightLeg", "armorRightBoot", "armorLeftArm", "armorLeftLeg", "armorLeftBoot"]
+}

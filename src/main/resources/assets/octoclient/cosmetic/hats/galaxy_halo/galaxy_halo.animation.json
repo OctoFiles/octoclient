@@ -1,0 +1,76 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"nrc.idle": {
+			"loop": true,
+			"animation_length": 14.41667,
+			"bones": {
+				"saturn": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"14.375": {
+							"vector": [0, 360, 0]
+						}
+					},
+					"position": {
+						"0.0": {
+							"vector": ["-7.25+math.cos(query.anim_time * 50) * 7", "-0.1+math.sin(query.anim_time * 200) * 0.1", "math.sin(query.anim_time * 50) * 7"]
+						},
+						"7.1667": {
+							"vector": ["-7.15+math.cos(query.anim_time * 50) * 7", "-0.1+math.sin(query.anim_time * 200) * 0.1", "math.sin(query.anim_time * 50) * 7"]
+						}
+					}
+				},
+				"erde": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"14.375": {
+							"vector": [0, 360, 0]
+						}
+					},
+					"position": {
+						"vector": ["-3+math.cos(query.anim_time * 100) * 3", 0, "math.sin(query.anim_time * 100) * 3"]
+					}
+				},
+				"mond": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"14.375": {
+							"vector": [0, 720, 0]
+						}
+					}
+				},
+				"jupiter": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"14.4167": {
+							"vector": [0, 360, 0]
+						}
+					},
+					"position": {
+						"vector": ["5+math.sin(query.anim_time * -100) * 3.7", 0, "math.cos(query.anim_time * -100) * 3.7"]
+					}
+				},
+				"sonne": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"14.4167": {
+							"vector": [0, -90, 0]
+						}
+					}
+				}
+			}
+		}
+	},
+	"geckolib_format_version": 2
+}

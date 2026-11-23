@@ -1,0 +1,32 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"nrc.idle": {
+			"loop": true,
+			"bones": {
+				"nitro_boost": {
+					"rotation": [0, "math.sin(query.anim_time * 25) * 360", 0],
+					"position": [0, "2+math.cos(query.anim_time * 100) ", 0],
+					"scale": 0.54
+				},
+				"octagon": {
+					"rotation": [0, "-math.sin(query.anim_time * 20) * 360", 0]
+				},
+				"kleinUnten2": {
+					"rotation": [0, "math.sin(query.anim_time * 40) * 360", 0],
+					"position": [0, "-math.cos(query.anim_time * 120)*2 ", 0]
+				},
+				"kleinOben2": {
+					"rotation": [0, "math.sin(query.anim_time * 40+100) * 360", 0],
+					"position": [0, "-math.cos(query.anim_time * 120+100)*2 ", 0]
+				},
+				"kleinUnten1": {
+					"rotation": [0, "-math.sin(query.anim_time * 25) * 360+math.sin(query.anim_time * 40) * 180", 0]
+				},
+				"kleinOben1": {
+					"rotation": [0, "-math.sin(query.anim_time * 25) * 360+math.sin(query.anim_time * 40+10) * 180", 0]
+				}
+			}
+		}
+	}
+}

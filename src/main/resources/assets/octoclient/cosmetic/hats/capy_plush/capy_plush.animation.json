@@ -1,0 +1,102 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"nrc.idle": {
+			"loop": "hold_on_last_frame",
+			"bones": {
+				"head": {
+					"rotation": {
+						"vector": ["Math.cos(query.anim_time * 100) * -1", 0, 0]
+					}
+				},
+				"body": {
+					"position": {
+						"vector": [0, "Math.cos(query.anim_time * 100) * 0.075 -0.075", 0]
+					}
+				},
+				"tail": {
+					"rotation": {
+						"vector": [0, "Math.cos(query.anim_time * 750) * -15", 0]
+					}
+				},
+				"backleg_right": {
+					"rotation": {
+						"vector": [0, "Math.cos(query.anim_time * 50) * -1", 0]
+					}
+				},
+				"backleg_left": {
+					"rotation": {
+						"vector": [0, "Math.cos(query.anim_time * 50) * 1", 0]
+					}
+				},
+				"frontleg_right": {
+					"rotation": {
+						"vector": [0, "Math.cos(query.anim_time * 70) * -2", 0]
+					}
+				},
+				"frontleg_left": {
+					"rotation": {
+						"vector": [0, "Math.cos(query.anim_time * 70) * 2", 0]
+					}
+				},
+				"halo": {
+					"rotation": {
+						"vector": [0, "(query.anim_time * 360) * 0.2", 0]
+					},
+					"position": {
+						"vector": [0, "Math.cos(query.anim_time * 150) * 0.3 -0.3", 0]
+					}
+				}
+			}
+		},
+		"nrc.walking": {
+			"loop": true,
+			"bones": {
+				"head": {
+					"rotation": {
+						"vector": ["Math.cos(query.anim_time * 100) * -1", 0, 0]
+					}
+				},
+				"body": {
+					"position": {
+						"vector": [0, "Math.cos(query.anim_time * 100) * 0.075 -0.075", 0]
+					}
+				},
+				"tail": {
+					"rotation": {
+						"vector": [0, "Math.cos(query.anim_time * 750) * -15", 0]
+					}
+				},
+				"backleg_right": {
+					"rotation": {
+						"vector": [0, "Math.cos(query.anim_time * 50) * -1", 0]
+					}
+				},
+				"backleg_left": {
+					"rotation": {
+						"vector": [0, "Math.cos(query.anim_time * 50) * 1", 0]
+					}
+				},
+				"frontleg_right": {
+					"rotation": {
+						"vector": [0, "Math.cos(query.anim_time * 70) * -2", 0]
+					}
+				},
+				"frontleg_left": {
+					"rotation": {
+						"vector": [0, "Math.cos(query.anim_time * 70) * 2", 0]
+					}
+				},
+				"halo": {
+					"rotation": {
+						"vector": [0, "(query.anim_time * 360) * 0.2", 0]
+					},
+					"position": {
+						"vector": [0, "Math.cos(query.anim_time * 150) * 0.3 -0.3", 0]
+					}
+				}
+			}
+		}
+	},
+	"geckolib_format_version": 2
+}

@@ -1,0 +1,19 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"nrc.idle": {
+			"loop": true,
+			"bones": {
+				"scheiben": {
+					"rotation": [0, "query.anim_time*600", 0],
+					"scale": 1.1
+				},
+				"neonlights": {
+					"rotation": [0, "query.anim_time*400 ", 0],
+					"position": [0, "math.sin(query.anim_time * 90) * 4", 0]
+				}
+			}
+		}
+	},
+	"geckolib_format_version": 2
+}

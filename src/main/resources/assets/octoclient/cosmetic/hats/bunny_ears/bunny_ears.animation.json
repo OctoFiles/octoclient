@@ -1,0 +1,49 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"misc.idle": {
+			"loop": true
+		},
+		"nrc.idle": {
+			"loop": true,
+			"bones": {
+				"ear21": {
+					"rotation": {
+						"vector": ["math.sin(query.anim_time * 100) * 4", 0, 0]
+					}
+				},
+				"ear11": {
+					"rotation": {
+						"vector": ["math.sin(query.anim_time * 100+100) * 4", 0, 0]
+					}
+				}
+			}
+		},
+		"nrc.walking": {
+			"loop": true,
+			"bones": {
+				"ear11": {
+					"rotation": {
+						"vector": ["math.sin(query.anim_time * 1200+100) * 4", 0, 0]
+					}
+				},
+				"ear13": {
+					"rotation": {
+						"vector": ["-math.sin(query.anim_time * 1200+150) * 10", 0, 0]
+					}
+				},
+				"ear21": {
+					"rotation": {
+						"vector": ["math.sin(query.anim_time * 1200) * 4", 0, 0]
+					}
+				},
+				"ear23": {
+					"rotation": {
+						"vector": ["-math.sin(query.anim_time * 1200+50) * 10", 0, 0]
+					}
+				}
+			}
+		}
+	},
+	"geckolib_format_version": 2
+}

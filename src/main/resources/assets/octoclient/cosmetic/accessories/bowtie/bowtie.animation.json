@@ -1,0 +1,19 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"nrc.idle": {
+			"loop": true
+		},
+		"nrc.shop": {
+			"loop": true,
+			"bones": {
+				"model": {
+					"rotation": {
+						"vector": [-10, -47.5, 0]
+					}
+				}
+			}
+		}
+	},
+	"geckolib_format_version": 2
+}

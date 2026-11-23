@@ -1,0 +1,45 @@
+{
+    "id": "50e51a52-df28-45f9-8bd3-57d358bdcff5",
+    "dateAdded": "2025-10-07",
+    "name": "Autumn Aura",
+    "creator": "Bryan&Dönermann",
+    "designerIds": ["ae126ab8-489a-4adc-b51c-95737eafb575", "0565369c-ec68-4e7e-a90f-3492eb7002d8"],
+    "price": 1500,
+    "type": "AURA",
+    "path": "autumn_aura",
+    "defaultSettings": {
+        "frames": 3,
+        "frameDelay": 70,
+        "color": null,
+        "scale": 1.0,
+        "previewScale": 1.58,
+        "offset": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+        },
+        "previewOffset": {
+            "x": -0.01,
+            "y": -0.4,
+            "z": 0.0
+        },
+        "adjustRotationWhenSwimmingOrFlying": false,
+        "adjustPositionWhenSkeaking": true,
+        "sneakingPositionOffset": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+        },
+        "renderMode": null,
+        "hash": null
+    },
+    "layers": [],
+    "features": [],
+    "compatibleCosmetics": [],
+    "rarity": "EPIC",
+    "overflow": {
+    "overflowInShop": true
+     },
+    "isExclusive": false, 
+    "supportedBones": ["armorHead", "armorBody", "armorRightArm", "armorRightLeg", "armorRightBoot", "armorLeftArm", "armorLeftLeg", "armorLeftBoot"]
+}

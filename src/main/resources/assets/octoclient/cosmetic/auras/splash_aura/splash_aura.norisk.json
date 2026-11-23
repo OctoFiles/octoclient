@@ -1,0 +1,54 @@
+{
+  "id": "1e2fcaed-2032-4d1d-88f7-dfba756a9cf3",
+  "dateAdded": "2026-09-11",
+  "name": "Splash Aura",
+  "creator": "Bryan",
+  "designerIds": ["ae126ab8-489a-4adc-b51c-95737eafb575"],
+  "price": 1500,
+  "type": "AURA",
+  "path": "splash_aura",
+  "defaultSettings": {
+    "color": null,
+    "scale": 0.9,
+    "previewScale": 1.58,
+    "offset": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "previewOffset": {
+      "x": -0.01,
+      "y": -0.4,
+      "z": 0
+    },
+    "adjustRotationWhenSwimmingOrFlying": false,
+    "adjustPositionWhenSkeaking": true,
+    "sneakingPositionOffset": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "renderMode": null,
+    "hash": null
+  },
+  "layers": [],
+  "features": [],
+  "compatibleCosmetics": [
+    "488f66a1-0309-4221-9015-d4f4c361f1df"
+  ],
+  "rarity": "LEGENDARY",
+  "overflow": {
+    "overflowInShop": true
+  },
+  "isExclusive": false,
+  "supportedBones": [
+    "armorHead",
+    "armorBody",
+    "armorRightArm",
+    "armorRightLeg",
+    "armorRightBoot",
+    "armorLeftArm",
+    "armorLeftLeg",
+    "armorLeftBoot"
+  ]
+}

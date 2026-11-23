@@ -1,0 +1,82 @@
+# --- Build / Gradle ---
+.gradle/
+.gradle-home/
+build/
+out/
+classes/
+bin/
+.gradle-cache/
+
+# --- Dev-Umgebung / Run ---
+run/
+runs/
+legacy-1.8.9/
+forge-1.8.9/
+noriskclient-launcher-3/
+versions/
+libs/
+net/
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+eclipse/
+.classpath
+.project
+.settings/
+
+# --- Spiel-/Test-Artefakte ---
+logs/
+screenshots/
+saves/
+downloads/
+mods/
+resourcepacks/
+data/
+config/
+options.txt
+usercache.json
+servers.dat
+*.log
+*.log.err
+*.log.gz
+
+# --- Python-API ---
+__pycache__/
+*.py[cod]
+*.db
+*.db-shm
+*.db-wal
+
+# --- Node ---
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# --- Werkzeuge / Captures / Attachments (lokal) ---
+tooling/
+_tools/
+_tmp_attach/
+.cloud-attachments/
+.freebuff/
+.fabric/
+*.ps1
+
+# --- Große Roh-Asset-Quellen (nur Generierungsmaterial, nicht ins Repo) ---
+/capes/
+/cosmetics/
+/wings/
+/hat/
+/bandana/
+/aura/
+/accessories/
+/third_party/
+
+# --- Lose Textdumps im Wurzelverzeichnis ---
+/*.txt
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+desktop.ini

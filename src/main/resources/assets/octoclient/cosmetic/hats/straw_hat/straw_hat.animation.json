@@ -1,0 +1,15 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"nrc.idle": {
+			"loop": true,
+			"bones": {
+				"hat": {
+					"position": [0, -1.5, 0],
+					"scale": 1.05
+				}
+			}
+		}
+	},
+	"geckolib_format_version": 2
+}

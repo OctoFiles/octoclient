@@ -1,0 +1,23 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"nrc.idle": {
+			"loop": true,
+			"bones": {
+				"halo": {
+					"rotation": [0, "math.cos(query.anim_time * 10) * 150", 0],
+					"position": [0, "math.cos(query.anim_time * 100) * 0.3", 0]
+				},
+				"sparkle": {
+					"position": [0, -4.5, 0],
+					"scale": 1.15
+				}
+			}
+		}
+	},
+	"geckolib_format_version": 2,
+	"geometry.animations": {
+		"texturewidth": 64,
+		"textureheight": 64
+	}
+}

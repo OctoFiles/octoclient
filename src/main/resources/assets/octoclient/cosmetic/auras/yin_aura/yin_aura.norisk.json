@@ -1,0 +1,56 @@
+{
+  "id": "488f66a1-0309-4221-9015-d4f4c361f1df",
+  "dateAdded": "2025-11-13",
+  "name": "Yin Aura",
+  "creator": "Bryan",
+  "designerIds": ["ae126ab8-489a-4adc-b51c-95737eafb575"],
+  "price": 1200,
+  "type": "AURA",
+  "path": "yin_aura",
+  "defaultSettings": {
+    "frames": 3,
+    "frameDelay": 70,
+    "color": null,
+    "scale": 1,
+    "previewScale": 1.58,
+    "offset": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "previewOffset": {
+      "x": -0.01,
+      "y": -0.4,
+      "z": 0
+    },
+    "adjustRotationWhenSwimmingOrFlying": false,
+    "adjustPositionWhenSkeaking": true,
+    "sneakingPositionOffset": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "renderMode": null,
+    "hash": null
+  },
+  "layers": [],
+  "features": [],
+  "compatibleCosmetics": [
+    "8e2fcaed-2032-4d1d-88f7-dfba756a9cf3"
+  ],
+  "rarity": "LEGENDARY",
+  "overflow": {
+    "overflowInShop": true
+  },
+  "isExclusive": false,
+  "supportedBones": [
+    "armorHead",
+    "armorBody",
+    "armorRightArm",
+    "armorRightLeg",
+    "armorRightBoot",
+    "armorLeftArm",
+    "armorLeftLeg",
+    "armorLeftBoot"
+  ]
+}

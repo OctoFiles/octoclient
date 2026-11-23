@@ -1,0 +1,20 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"nrc.idle": {
+			"loop": true,
+			"bones": {
+				"tl": {
+					"rotation": {
+						"vector": [0, "-2.5+math.cos(query.anim_time * 250) * 10", 0]
+					}
+				},
+				"tr": {
+					"rotation": {
+						"vector": [0, "2.5+math.cos(query.anim_time * 250) * -10", 0]
+					}
+				}
+			}
+		}
+	}
+}

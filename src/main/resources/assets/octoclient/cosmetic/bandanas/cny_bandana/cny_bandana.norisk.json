@@ -1,0 +1,47 @@
+{
+    "id": "8e382961-1a4d-4b32-8f30-c0bd8fb6793d",
+    "name": "CNY Bandana 25",
+    "dateAdded": "2025-01-29",
+    "creator": "Bryan",
+    "designerIds": ["ae126ab8-489a-4adc-b51c-95737eafb575"],
+    "price": 600,
+    "type": "BANDANA",
+    "path": "cny_bandana",
+    "defaultSettings": {
+        "color": null,
+        "scale": 0.9575,
+        "previewScale": 3.27,
+        "offset": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+        },
+        "previewOffset": {
+            "x": -0.02,
+            "y": -1.12,
+            "z": 0.0
+        },
+        "adjustRotationWhenSwimmingOrFlying": false,
+        "adjustPositionWhenSkeaking": true,
+        "sneakingPositionOffset": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+        },
+        "renderMode": null,
+        "hash": null
+    },
+    "layers": [],
+    "features": [
+        {
+            "range": {
+                "start": -1.0,
+                "endInclusive": 1.5
+            },
+            "type": "Y_AXIS"
+        }
+    ],
+    "compatibleCosmetics": [],
+    "rarity": "RARE",
+    "isExclusive": true
+}

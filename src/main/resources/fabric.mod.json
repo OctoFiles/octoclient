@@ -1,0 +1,33 @@
+{
+	"schemaVersion": 1,
+	"id": "octoclient",
+	"version": "${version}",
+	"name": "OctoClient",
+	"description": "Dark & sleek client dashboard (R-Shift) with animated module cards, sub-setting modals and a fully editable in-game HUD.",
+	"authors": [
+		"octoclient"
+	],
+	"contact": {},
+	"license": "MIT",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"dev.octoclient.OctoClientCommon"
+		],
+		"client": [
+			"dev.octoclient.OctoClient"
+		]
+	},
+	"mixins": [
+		{
+			"config": "octoclient.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.20.1",
+		"minecraft": "~26.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}

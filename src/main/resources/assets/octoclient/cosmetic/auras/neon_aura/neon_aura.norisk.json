@@ -1,0 +1,54 @@
+{
+  "id": "c8f3f052-b292-46ba-8b52-06d3330cca21",
+  "dateAdded": "2025-09-01",
+  "name": "Neon Aura",
+  "creator": "Bryan",
+  "designerIds": ["ae126ab8-489a-4adc-b51c-95737eafb575"],
+  "price": 1500,
+  "type": "AURA",
+  "path": "neon_aura",
+  "defaultSettings": {
+    "frames": 3,
+    "frameDelay": 70,
+    "color": null,
+    "scale": 1,
+    "previewScale": 1.58,
+    "offset": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "previewOffset": {
+      "x": -0.01,
+      "y": -0.4,
+      "z": 0
+    },
+    "adjustRotationWhenSwimmingOrFlying": false,
+    "adjustPositionWhenSkeaking": true,
+    "sneakingPositionOffset": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "renderMode": null,
+    "hash": null
+  },
+  "layers": [],
+  "features": [],
+  "compatibleCosmetics": [],
+  "rarity": "EPIC",
+  "overflow": {
+    "overflowInShop": true
+  },
+  "isExclusive": false,
+  "supportedBones": [
+    "armorHead",
+    "armorBody",
+    "armorRightArm",
+    "armorRightLeg",
+    "armorRightBoot",
+    "armorLeftArm",
+    "armorLeftLeg",
+    "armorLeftBoot"
+  ]
+}

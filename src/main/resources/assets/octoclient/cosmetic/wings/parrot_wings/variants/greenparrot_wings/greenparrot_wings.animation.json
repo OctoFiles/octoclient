@@ -1,0 +1,36 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"nrc.idle": {
+			"loop": true,
+			"bones": {
+				"l": {
+					"rotation": [8, "35 - math.sin(query.anim_time * 80) * 25 - 0.1 * math.sin(query.anim_time * 200) * 15", -5]
+				},
+				"ll": {
+					"rotation": [0, "-math.sin(query.anim_time * 100) * 25 + 0.1 * math.sin(query.anim_time * 200) * 15", 0]
+				},
+				"r": {
+					"rotation": [8, "-35 + math.sin(query.anim_time * 80 ) * 25 + 0.1 * math.sin(query.anim_time * 200) * 15", 5]
+				},
+				"rr": {
+					"rotation": [0, "math.sin(query.anim_time * 100) * 25 - 0.1 * math.sin(query.anim_time * 200) * 15", 0]
+				}
+			}
+		},
+		"nrc.shop": {
+			"loop": true,
+			"bones": {
+				"l": {
+					"rotation": [-15, "-20+math.sin(query.anim_time*250)*10", 0],
+					"position": [-2, 5, 0]
+				},
+				"r": {
+					"rotation": [-15, "20-math.sin(query.anim_time*250)*10", 0],
+					"position": [-2, 5, 0]
+				}
+			}
+		}
+	},
+	"geckolib_format_version": 2
+}

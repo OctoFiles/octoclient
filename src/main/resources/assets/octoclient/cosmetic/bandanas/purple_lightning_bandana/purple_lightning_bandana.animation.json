@@ -1,0 +1,16 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"misc.idle": {
+			"loop": true,
+			"bones": {
+				"bandana": {
+					"scale": {
+						"vector": [1.05, 1.05, 1.05]
+					}
+				}
+			}
+		}
+	},
+	"geckolib_format_version": 2
+}

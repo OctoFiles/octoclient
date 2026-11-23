@@ -1,0 +1,45 @@
+{
+    "id": "10935769-d0f4-4362-b452-b5104751b224",
+    "dateAdded": "2025-10-27",
+    "name": "Soul Aura",
+    "creator": "Bryan",
+    "designerIds": ["ae126ab8-489a-4adc-b51c-95737eafb575"],
+    "price": 1500,
+    "type": "AURA",
+    "path": "soul_aura",
+    "defaultSettings": {
+        "frames": 3,
+        "frameDelay": 70,
+        "color": null,
+        "scale": 1.2,
+        "previewScale": 1.8,
+        "offset": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+        },
+        "previewOffset": {
+            "x": -0.01,
+            "y": -0.4,
+            "z": 0.0
+        },
+        "adjustRotationWhenSwimmingOrFlying": false,
+        "adjustPositionWhenSkeaking": true,
+        "sneakingPositionOffset": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+        },
+        "renderMode": null,
+        "hash": null
+    },
+    "layers": [],
+    "features": [],
+    "compatibleCosmetics": [],
+    "rarity": "EPIC",
+    "overflow": {
+    "overflowInShop": true
+     },
+    "isExclusive": false,
+    "supportedBones": ["armorHead", "armorBody", "armorRightArm", "armorRightLeg", "armorRightBoot", "armorLeftArm", "armorLeftLeg", "armorLeftBoot"]
+}

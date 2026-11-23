@@ -1,0 +1,40 @@
+{
+    "id": "0eaa265a-5e3e-4a91-863d-218da3406229",
+    "name": "Spring Aura",
+    "creator": "Doenermann, Bryan",
+    "designerIds": ["ae126ab8-489a-4adc-b51c-95737eafb575", "0565369c-ec68-4e7e-a90f-3492eb7002d8"],
+    "price": 1200,
+    "type": "AURA",
+    "path": "spring_aura",
+    "dateAdded": "2025-03-21",
+    "defaultSettings": {
+        "color": null,
+        "scale": 1.0,
+        "previewScale": 3.73,
+        "offset": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+        },
+        "previewOffset": {
+            "x": -0.01,
+            "y": -0.68,
+            "z": 0.0
+        },
+        "adjustRotationWhenSwimmingOrFlying": false,
+        "adjustPositionWhenSkeaking": true,
+        "sneakingPositionOffset": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+        },
+        "renderMode": null,
+        "hash": null
+    },
+    "layers": [],
+    "features": [],
+    "compatibleCosmetics": [],
+    "rarity": "EPIC",
+    "isExclusive": false, 
+    "supportedBones": ["armorHead", "armorBody", "armorRightArm", "armorRightLeg", "armorRightBoot", "armorLeftArm", "armorLeftLeg", "armorLeftBoot"]
+}

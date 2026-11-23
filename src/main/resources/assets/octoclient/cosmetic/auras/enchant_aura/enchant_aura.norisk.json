@@ -1,0 +1,42 @@
+{
+    "id": "ed3a42bb-f8dd-4be9-bef8-80e96ae83277",
+    "dateAdded": "2026-04-25",
+    "name": "Enchant Aura",
+    "creator": "NoRisk",
+    "price": 1500,
+    "type": "AURA",
+    "path": "enchant_aura",
+    "defaultSettings": {
+        "color": null,
+        "scale": 1.0,
+        "previewScale": 1.5,
+        "offset": {
+            "x": 0.0,
+            "y": 10.0,
+            "z": 0.0
+        },
+        "previewOffset": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+        },
+        "adjustRotationWhenSwimmingOrFlying": false,
+        "adjustPositionWhenSkeaking": true,
+        "sneakingPositionOffset": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+        },
+        "renderMode": null,
+        "hash": null
+    },
+    "layers": [],
+    "features": [],
+    "compatibleCosmetics": [],
+    "rarity": "EPIC",
+    "overflow": {
+        "overflowInShop": true
+    },
+    "isExclusive": false,
+    "supportedBones": []
+}

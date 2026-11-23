@@ -1,0 +1,52 @@
+{
+  "id": "1fcc82a2-ad8b-47fe-b5f9-f2f951f33bee",
+  "dateAdded": "2026-05-02",
+  "name": "Lotus Aura",
+  "creator": "Bryan",
+  "designerIds": ["ae126ab8-489a-4adc-b51c-95737eafb575"],
+  "price": 1500,
+  "type": "AURA",
+  "path": "lotusflower_aura",
+  
+  "defaultSettings": {
+    "color": null,
+    "scale": 1.2,
+    "previewScale": 1.58,
+    "offset": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "previewOffset": {
+      "x": -0.01,
+      "y": -0.4,
+      "z": 0
+    },
+    "adjustRotationWhenSwimmingOrFlying": false,
+    "adjustPositionWhenSkeaking": true,
+    "sneakingPositionOffset": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "renderMode": null,
+    "hash": null
+  },
+  "layers": [],
+  "features": [],
+  "rarity": "LEGENDARY",
+  "overflow": {
+    "overflowInShop": true
+  },
+  "isExclusive": false,
+  "supportedBones": [
+    "armorHead",
+    "armorBody",
+    "armorRightArm",
+    "armorRightLeg",
+    "armorRightBoot",
+    "armorLeftArm",
+    "armorLeftLeg",
+    "armorLeftBoot"
+  ]
+}

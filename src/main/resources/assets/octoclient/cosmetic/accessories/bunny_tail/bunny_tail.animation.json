@@ -1,0 +1,25 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"nrc.idle": {
+			"loop": true,
+			"bones": {
+				"bunnytail": {
+					"rotation": {
+						"vector": ["-10 - Math.cos(query.anim_time * 100) * -3", 0, 0]
+					}
+				}
+			}
+		},
+		"nrc.walking": {
+			"loop": true,
+			"bones": {
+				"bunnytail": {
+					"rotation": {
+						"vector": [-10, "-0 - Math.cos(query.anim_time * 1000) * -5", 0]
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,43 @@
+{
+    "id": "95aaccf8-368f-4a9e-8bd4-c416601be204",
+    "name": "Note Aura",
+    "creator": "Doenermann",
+    "designerIds": ["0565369c-ec68-4e7e-a90f-3492eb7002d8"],
+    "price": 900,
+    "type": "AURA",
+    "path": "note_aura",
+    "dateAdded": "2025-05-15",
+    "defaultSettings": {
+        "color": null,
+        "scale": 1.0,
+        "previewScale": 2.0,
+        "offset": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+        },
+        "previewOffset": {
+            "x": -0.01,
+            "y": -0.4,
+            "z": 0.0
+        },
+        "adjustRotationWhenSwimmingOrFlying": false,
+        "adjustPositionWhenSkeaking": true,
+        "sneakingPositionOffset": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+        },
+        "renderMode": null,
+        "hash": null
+    },
+    "layers": [],
+    "features": [],
+    "compatibleCosmetics": [],
+    "rarity": "RARE",
+     "overflow": {
+    "overflowInShop": true
+     },
+    "isExclusive": false, 
+    "supportedBones": ["armorHead", "armorBody", "armorRightArm", "armorRightLeg", "armorRightBoot", "armorLeftArm", "armorLeftLeg", "armorLeftBoot"]
+}

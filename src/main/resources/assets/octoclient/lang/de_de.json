@@ -1,0 +1,16 @@
+{
+  "key.octoclient.dashboard": "Dashboard öffnen",
+  "key.octoclient.cosmetics": "Cosmetics öffnen",
+  "key.octoclient.hud_editor": "HUD-Editor öffnen",
+  "key.octoclient.free_look_hold": "Free Look (halten)",
+  "key.octoclient.free_look_toggle": "Free Look (umschalten)",
+  "key.octoclient.free_look_reset": "Free-Look-Ansicht zuruecksetzen",
+  "key.octoclient.panic": "Panik (alles deaktivieren)",
+  "key.skylyrics.toggle": "Sky Lyrics umschalten",
+  "key.skylyrics.earlier": "Lyrics frueher anzeigen",
+  "key.skylyrics.later": "Lyrics spaeter anzeigen",
+  "key.skylyrics.sync": "Lyrics-Zeile synchronisieren",
+  "category.octoclient": "OctoClient",
+  "menu.octoclient.cosmetics": "Cosmetics",
+  "category.octoclient.free_look": "Free Look"
+}

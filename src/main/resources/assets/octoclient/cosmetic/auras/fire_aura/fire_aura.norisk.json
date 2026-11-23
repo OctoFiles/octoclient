@@ -1,0 +1,45 @@
+{
+    "id": "18f8a478-4823-4fd7-8877-26096a741a24",
+    "dateAdded": "2025-05-31",
+    "name": "Fire Aura",
+    "creator": "Doenermann",
+    "designerIds": ["0565369c-ec68-4e7e-a90f-3492eb7002d8"],
+    "price": 900,
+    "type": "AURA",
+    "path": "fire_aura",
+    "defaultSettings": {
+        "frames": 5,
+        "frameDelay": 70,
+        "color": null,
+        "scale": 1.0,
+        "previewScale": 1.58,
+        "offset": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+        },
+        "previewOffset": {
+            "x": -0.01,
+            "y": -0.69,
+            "z": 0.0
+        },
+        "adjustRotationWhenSwimmingOrFlying": false,
+        "adjustPositionWhenSkeaking": true,
+        "sneakingPositionOffset": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+        },
+        "renderMode": null,
+        "hash": null
+    },
+    "layers": [],
+    "features": [],
+    "compatibleCosmetics": [],
+    "rarity": "RARE",
+    "overflow": {
+    "overflowInShop": true
+     },
+    "isExclusive": false, 
+    "supportedBones": ["armorHead", "armorBody", "armorRightArm", "armorRightLeg", "armorRightBoot", "armorLeftArm", "armorLeftLeg", "armorLeftBoot"]
+}
